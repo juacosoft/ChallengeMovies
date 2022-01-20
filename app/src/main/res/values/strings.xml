@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">ChallengeMovies</string>
+    <string name="discovery_by_popular_text">Discovery by: Popular</string>
     <string-array name="filters">
         <item>Popular</item>
         <item>Favorites</item>
