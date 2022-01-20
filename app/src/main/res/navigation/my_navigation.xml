@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/my_navigation"
+    app:startDestination="@id/discoveryMoviesFragment">
+
+    <fragment
+        android:id="@+id/moviesFragment"
+        android:name="com.jmdev.challengemovies.ui.fragments.MoviesFragment"
+        android:label="MoviesFragment" >
+        <action
+            android:id="@+id/action_moviesFragment_to_seriesFragment"
+            app:destination="@id/seriesFragment" />
+        <action
+            android:id="@+id/action_moviesFragment_to_detailMovieFragment"
+            app:destination="@id/detailMovieFragment"
+            />
+        <action
+            android:id="@+id/action_moviesFragment_to_seeMoreMovieFragment"
+            app:destination="@id/seeMoreMovieFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/seriesFragment"
+        android:name="com.jmdev.challengemovies.ui.fragments.SeriesFragment"
+        android:label="SeriesFragment" >
+        <action
+            android:id="@+id/action_seriesFragment_to_moviesFragment"
+            app:destination="@id/moviesFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/detailMovieFragment"
+        android:name="com.jmdev.challengemovies.ui.fragments.DetailMovieFragment"
+        android:label="DetailMovieFragment" >
+        <action
+            android:id="@+id/action_detailMovieFragment_to_moviesFragment"
+            app:destination="@id/moviesFragment"
+            app:enterAnim="@anim/slide_in"
+            app:exitAnim="@anim/fade_out" />
+        <action
+            android:id="@+id/action_detailMovieFragment_to_videoPlayerFragment"
+            app:destination="@id/videoPlayerFragment" />
+        <action
+            android:id="@+id/action_detailMovieFragment_to_discoveryMoviesFragment"
+            app:destination="@id/discoveryMoviesFragment" />
+        <action
+            android:id="@+id/action_detailMovieFragment_to_favoriteMoviesFragment"
+            app:destination="@id/favoriteMoviesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/videoPlayerFragment"
+        android:name="com.jmdev.challengemovies.ui.fragments.VideoPlayerFragment"
+        android:label="VideoPlayerFragment" >
+        <action
+            android:id="@+id/action_videoPlayerFragment_to_detailMovieFragment"
+            app:destination="@id/detailMovieFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/seeMoreMovieFragment"
+        android:name="com.jmdev.challengemovies.ui.fragments.SeeMoreMovieFragment"
+        android:label="SeeMoreMovieFragment" >
+        <action
+            android:id="@+id/action_seeMoreMovieFragment_to_moviesFragment"
+            app:destination="@id/moviesFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/discoveryMoviesFragment"
+        android:name="com.jmdev.challengemovies.ui.fragments.DiscoveryMoviesFragment"
+        android:label="DiscoveryMoviesFragment" >
+        <action
+            android:id="@+id/action_discoveryMoviesFragment_to_detailMovieFragment"
+            app:destination="@id/detailMovieFragment" />
+        <action
+            android:id="@+id/action_discoveryMoviesFragment_to_favoriteMoviesFragment"
+            app:destination="@id/favoriteMoviesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/favoriteMoviesFragment"
+        android:name="com.jmdev.challengemovies.ui.fragments.FavoriteMoviesFragment"
+        android:label="FavoriteMoviesFragment" >
+        <action
+            android:id="@+id/action_favoriteMoviesFragment_to_discoveryMoviesFragment"
+            app:destination="@id/discoveryMoviesFragment" />
+        <action
+            android:id="@+id/action_favoriteMoviesFragment_to_detailMovieFragment"
+            app:destination="@id/detailMovieFragment" />
+    </fragment>
+</navigation>

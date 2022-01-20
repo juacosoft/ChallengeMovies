@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:cardBackgroundColor="@android:color/transparent"
+    android:layout_margin="20dp"
+    app:cardCornerRadius="30dp"
+    app:cardElevation="3dp"
+    android:verticalScrollbarPosition="defaultPosition"
+
+    app:layout_constraintTop_toTopOf="parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/itemmovie_poster"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/no_image"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/itemmovie_title"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:padding="5dp"
+            android:visibility="gone"
+            tools:visibility="visible"
+            android:background="@color/purple_500"
+            app:layout_constraintBottom_toTopOf="@+id/itemmovie_rate"
+            tools:text="Xmen 3" />
+        <me.zhanghai.android.materialratingbar.MaterialRatingBar
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:id="@+id/itemmovie_rate"
+            style="@style/Widget.AppCompat.RatingBar.Small"
+            app:layout_constraintBottom_toBottomOf="@+id/itemmovie_poster"
+            android:layout_marginStart="20dp"
+            app:mrb_progressTint="@color/yelow"
+            android:layout_marginEnd="20dp"
+            tools:rating="2.5"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

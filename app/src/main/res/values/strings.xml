@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ChallengeMovies</string>
+    <string-array name="filters">
+        <item>Popular</item>
+        <item>Favorites</item>
+    </string-array>
+</resources>

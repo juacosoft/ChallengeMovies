@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="Home"
+        android:icon="@drawable/ic_home"
+        android:id="@+id/discoveryMoviesFragment"
+        />
+
+    <item
+        android:title="Top-Popular"
+        android:icon="@drawable/ic_movies"
+        android:id="@+id/moviesFragment"
+    />
+    <item
+        android:title="Favorite"
+        android:icon="@drawable/ic_favorite_on"
+        android:id="@+id/favoriteMoviesFragment"
+        />
+    <item
+        android:title="Series"
+        android:icon="@drawable/ic_series"
+        android:id="@+id/seriesFragment"
+        />
+</menu>
