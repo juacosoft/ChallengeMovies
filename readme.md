@@ -10,7 +10,7 @@ Los requerimientos solicitados se agregaron al proyecto.
 
 Desarrollado en kotlin android Patron MVVM,retrofit2, RxAndroid, DaggerHilt, RxJava , ViewBinding,flows, api desde https://developers.themoviedb.org proceso de consumo de respuestas JSON
 
-# Consideraciones Basado en patron de diseño MVVM y programacion reactiva se realizo aplicacion online, la implementacion o sincronizacion de archivos de manera offline realizado con persistencia de datos DAO la clase AppDataBase (Extiende de RoomDatabase) Sincroniza los datos traidos desde la api y estos estarian disponibles para ser injectados en los viewmodels correspondientes interface MoviesDao contiene las sentencias SQLite pertinentes para: insercion de datos, consulta y actualizacion
+#- Consideraciones Basado en patron de diseño MVVM y programacion reactiva se realizo aplicacion online, la implementacion o sincronizacion de archivos de manera offline realizado con persistencia de datos DAO la clase AppDataBase (Extiende de RoomDatabase) Sincroniza los datos traidos desde la api y estos estarian disponibles para ser injectados en los viewmodels correspondientes interface MoviesDao contiene las sentencias SQLite pertinentes para: insercion de datos, consulta y actualizacion
 Pruebas unitarias a Room con DaggerHiltTesting
 
 
